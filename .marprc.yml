@@ -1,0 +1,4 @@
+# marp-base theme configuration
+# Used for standalone theme development and testing
+themeSet: ./themes
+allowLocalFiles: true

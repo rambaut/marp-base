@@ -1,0 +1,351 @@
+/* @theme minimal */
+
+/*
+ * Minimal theme for Marp presentations
+ * Helvetica Neue · Thin/Light weights
+ * Off-white background · Muted teal accent
+ * Wes Anderson extended palette available as CSS vars
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+/* ─── Colour palette ─────────────────────────────────────────── */
+:root {
+  --color-bg:       #f8f7f4;
+  --color-bg-alt:   #eeede9;
+  --color-text:     #1a1a1a;
+  --color-subtle:   #6b6b6b;
+  --color-rule:     #d0cfc9;
+  --color-accent:   #4a9b8e;
+  --color-accent-2: #3a7d72;
+  --color-invert-bg:#1e2a28;
+
+  /* Wes Anderson palette — use in figures and accent slides */
+  --wa-rose:        #c9827c;
+  --wa-mustard:     #d4a843;
+  --wa-powder-blue: #8db5c8;
+  --wa-sage:        #8fad88;
+  --wa-terracotta:  #c4704a;
+  --wa-burgundy:    #7a3048;
+  --wa-cream:       #f0e8d8;
+  --wa-lavender:    #a99bbf;
+}
+
+/* ─── Base slide ─────────────────────────────────────────────── */
+section {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Noto Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1.55;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding: 56px 72px;
+  width: 1280px;
+  height: 720px;
+  box-sizing: border-box;
+}
+
+/* ─── Typography ─────────────────────────────────────────────── */
+h1 {
+  font-weight: 100;
+  font-size: 2.4em;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin: 0 0 0.3em;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 1.5em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-accent);
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid var(--color-rule);
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 1.1em;
+  color: var(--color-subtle);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0.8em 0 0.3em;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+strong {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+em {
+  font-style: italic;
+  font-weight: inherit;
+  color: var(--color-subtle);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+/* ─── Lists ──────────────────────────────────────────────────── */
+ul, ol {
+  padding-left: 1.4em;
+  margin: 0.3em 0;
+}
+
+li {
+  margin: 0.25em 0;
+  line-height: 1.5;
+}
+
+/* Incremental reveal marker — use * or 1) bullets in Markdown */
+li::marker {
+  color: var(--color-accent);
+}
+
+/* ─── Code ───────────────────────────────────────────────────── */
+code {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.82em;
+  font-weight: 400;
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 1em 1.2em;
+  margin: 0.6em 0;
+  overflow: hidden;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.78em;
+  line-height: 1.6;
+}
+
+/* ─── Tables ─────────────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.85em;
+  margin: 0.5em 0;
+}
+
+th {
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-subtle);
+  border-bottom: 2px solid var(--color-accent);
+  padding: 0.4em 0.8em;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid var(--color-rule);
+  padding: 0.4em 0.8em;
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* ─── Blockquote ─────────────────────────────────────────────── */
+blockquote {
+  border-left: 3px solid var(--color-accent);
+  margin: 0.6em 0;
+  padding: 0.2em 1em;
+  color: var(--color-subtle);
+  font-weight: 200;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* ─── Horizontal rule ────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-rule);
+  margin: 1em 0;
+}
+
+/* ─── Pagination ─────────────────────────────────────────────── */
+section::after {
+  font-weight: 200;
+  font-size: 0.65em;
+  color: var(--color-rule);
+  letter-spacing: 0.05em;
+}
+
+/* ─── Header / Footer ────────────────────────────────────────── */
+header, footer {
+  font-weight: 200;
+  font-size: 0.6em;
+  color: var(--color-subtle);
+  letter-spacing: 0.04em;
+}
+
+/* ─── Images ─────────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ─── Layout class: title slide ──────────────────────────────── */
+/*  Usage: <!-- _class: title -->  */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px 96px;
+}
+
+section.title h1 {
+  font-weight: 100;
+  font-size: 2.8em;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.2em;
+  border: none;
+}
+
+section.title h2 {
+  font-weight: 200;
+  font-size: 1.1em;
+  color: var(--color-subtle);
+  border: none;
+  padding: 0;
+  margin: 0 0 2em;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+section.title h3 {
+  font-weight: 300;
+  font-size: 0.75em;
+  color: var(--color-subtle);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+section.title::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-bottom: 2em;
+}
+
+/* ─── Layout class: section divider ─────────────────────────── */
+/*  Usage: <!-- _class: section -->  */
+section.section {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px 96px;
+}
+
+section.section h1 {
+  font-weight: 100;
+  font-size: 2.4em;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+section.section h2 {
+  font-weight: 200;
+  font-size: 1em;
+  color: rgba(255,255,255,0.7);
+  border: none;
+  padding: 0;
+  margin: 0.4em 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+section.section::after {
+  color: rgba(255,255,255,0.4);
+}
+
+/* ─── Layout class: invert (dark slide) ─────────────────────── */
+/*  Usage: <!-- _class: invert -->  */
+section.invert {
+  background-color: var(--color-invert-bg);
+  color: #e8e8e4;
+}
+
+section.invert h1 {
+  color: #ffffff;
+}
+
+section.invert h2 {
+  color: var(--color-accent);
+  border-color: #3a4a47;
+}
+
+section.invert h3 {
+  color: #8fa8a3;
+}
+
+section.invert code {
+  background: #2a3a37;
+  color: #c8e0dc;
+}
+
+section.invert pre {
+  background: #2a3a37;
+}
+
+section.invert table th {
+  color: #8fa8a3;
+  border-color: var(--color-accent);
+}
+
+section.invert table td {
+  border-color: #3a4a47;
+}
+
+section.invert blockquote {
+  color: #8fa8a3;
+}
+
+section.invert::after {
+  color: #3a4a47;
+}
+
+/* ─── Layout class: two-column text ─────────────────────────── */
+/*  Usage: <!-- _class: columns -->                              */
+/*  Wrap two sections in the markdown with a blank line between  */
+section.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5em;
+  align-items: start;
+}
+
+/* Unequal split variant — override with style directive */
+/* e.g.: <!-- _class: columns --> <!-- style: "section { grid-template-columns: 2fr 1fr }" --> */

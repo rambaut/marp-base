@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#eeede9"/>
+  <rect x="1" y="1" width="798" height="498" fill="none" stroke="#d0cfc9" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="400" y="240" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="200" font-size="22" fill="#6b6b6b" text-anchor="middle">figure placeholder</text>
+  <text x="400" y="272" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="200" font-size="14" fill="#a0a09a" text-anchor="middle">replace with your SVG or PNG</text>
+</svg>
