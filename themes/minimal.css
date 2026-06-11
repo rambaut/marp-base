@@ -199,10 +199,21 @@ section::after {
 
 /* ─── Header / Footer ────────────────────────────────────────── */
 header, footer {
+  position: absolute;
+  left: 72px;
+  right: 72px;
   font-weight: 200;
   font-size: 0.6em;
   color: var(--color-subtle);
   letter-spacing: 0.04em;
+}
+
+header {
+  top: 28px;
+}
+
+footer {
+  bottom: 28px;
 }
 
 /* ─── Images ─────────────────────────────────────────────────── */
