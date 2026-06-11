@@ -1,0 +1,105 @@
+{
+  "background": "#f8f7f4",
+  "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+
+  "range": {
+    "category": [
+      "#4a9b8e",
+      "#c9827c",
+      "#d4a843",
+      "#8db5c8",
+      "#8fad88",
+      "#c4704a",
+      "#7a3048",
+      "#a99bbf"
+    ],
+    "diverging":  ["#7a3048", "#c9827c", "#f8f7f4", "#8db5c8", "#4a9b8e"],
+    "sequential": ["#f0e8d8", "#8fad88", "#4a9b8e", "#1e2a28"],
+    "heatmap":    ["#f0e8d8", "#4a9b8e", "#1e2a28"]
+  },
+
+  "view": {
+    "fill":             "#f8f7f4",
+    "stroke":           "transparent",
+    "continuousWidth":  600,
+    "continuousHeight": 400
+  },
+
+  "axis": {
+    "labelFont":       "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "labelFontWeight": 300,
+    "labelFontSize":   12,
+    "labelColor":      "#6b6b6b",
+    "labelPadding":    6,
+    "titleFont":       "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "titleFontWeight": 300,
+    "titleFontSize":   13,
+    "titleColor":      "#1a1a1a",
+    "titlePadding":    10,
+    "gridColor":       "#d0cfc9",
+    "gridOpacity":     0.8,
+    "domainColor":     "#d0cfc9",
+    "tickColor":       "#d0cfc9",
+    "tickSize":        4
+  },
+
+  "axisX": { "grid": false },
+  "axisY": { "grid": true, "domain": false, "ticks": false },
+
+  "title": {
+    "font":               "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "fontWeight":         200,
+    "fontSize":           16,
+    "color":              "#1a1a1a",
+    "anchor":             "start",
+    "offset":             12,
+    "subtitleFont":       "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "subtitleFontWeight": 300,
+    "subtitleFontSize":   13,
+    "subtitleColor":      "#6b6b6b",
+    "subtitlePadding":    4
+  },
+
+  "legend": {
+    "labelFont":       "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "labelFontWeight": 300,
+    "labelFontSize":   12,
+    "labelColor":      "#6b6b6b",
+    "titleFont":       "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "titleFontWeight": 300,
+    "titleFontSize":   12,
+    "titleColor":      "#1a1a1a",
+    "titlePadding":    6,
+    "padding":         6,
+    "cornerRadius":    0,
+    "fillColor":       "#f8f7f4",
+    "strokeColor":     "transparent"
+  },
+
+  "header": {
+    "labelFont":       "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "labelFontWeight": 300,
+    "labelFontSize":   12,
+    "labelColor":      "#6b6b6b",
+    "titleFont":       "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "titleFontWeight": 200,
+    "titleFontSize":   14,
+    "titleColor":      "#1a1a1a"
+  },
+
+  "mark":   { "color": "#4a9b8e", "opacity": 0.9 },
+  "line":   { "color": "#4a9b8e", "strokeWidth": 2 },
+  "point":  { "color": "#4a9b8e", "size": 60, "filled": true },
+  "bar":    { "color": "#4a9b8e", "cornerRadiusTopLeft": 2, "cornerRadiusTopRight": 2 },
+  "area":   { "color": "#4a9b8e", "opacity": 0.5 },
+  "rect":   { "color": "#4a9b8e" },
+  "rule":   { "color": "#d0cfc9", "strokeWidth": 1 },
+  "tick":   { "color": "#4a9b8e", "thickness": 1.5 },
+  "trail":  { "color": "#4a9b8e" },
+  "boxplot": {
+    "box":      { "color": "#4a9b8e", "opacity": 0.6 },
+    "median":   { "color": "#3a7d72", "strokeWidth": 2 },
+    "outliers": { "color": "#c9827c" },
+    "ticks":    { "color": "#4a9b8e" }
+  }
+}
